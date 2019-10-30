@@ -1,0 +1,124 @@
+.library {
+  &__content-wrap {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    @media all and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  &__image_wrapper {
+    width: 50%;
+    margin-right: 130px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @media all and (max-width: 768px) {
+      width: auto;
+      margin-right: 0;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+  &__text {
+    width: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .06em;
+    line-height: 1.8em;
+    text-transform: none;
+    color: rgba(29,29,29,.7);
+    @media all and (max-width: 768px) {
+      width: auto;
+    }
+    & li {
+      margin: 20px 0;
+    }
+  }
+}
+
+
+.request-sample {
+  &__content-wrap {
+    display: flex;
+    margin: 20px 0;
+    @media all and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  &__side {
+    width: 40%;
+    margin-right: 50px;
+    @media all and (max-width: 768px) {
+      width: auto;
+      margin-right: 0;
+    }
+    &--desc {
+      margin: 10px 0;
+      font-size: 18px;
+      &-bold {
+        font-weight: 600;
+      }
+    }
+  }
+  &__image_wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    @media all and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  &__form {
+    width: 60%;
+    @media all and (max-width: 768px) {
+      width: auto;
+    }
+  }
+}
+
+.form__title {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  &:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.form_name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form_first-name, .form_last-name {
+  width: 48%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #cccccc;
+  background: #fafafa;
+  color: #000000;
+  border-radius: 2px;
+  box-sizing: border-box;
+  outline: none;
+}
+select {
+  height: 40px;
+  font-size: 18px;
+}
+textarea {
+  height: 130px;
+}

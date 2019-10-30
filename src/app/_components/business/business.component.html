@@ -1,0 +1,134 @@
+<app-background></app-background>
+<div class="container">
+  <section class="business-industries">
+    <h2 class="section__title">INDUSTRIES SERVICED</h2>
+    <p class="section__description">We work with a range of companies who produce soft good products including <strong>snow
+      apparel, automotive,
+      personal protective equipment (PPE), outdoor apparel, functional footwear,
+      wearables</strong> and <strong>interiors.</strong>
+    </p>
+    <div class="business-industries__gallery">
+      <div class="business-industries__image" *ngFor="let item of gallery">
+        <img
+          [src]="item.img"
+          [alt]="item.title">
+        <p>{{item.title}}</p>
+      </div>
+    </div>
+  </section>
+  <section class="business-phases">
+    <div class="section__line"></div>
+    <h2 class="section__title"><strong>The LOOMIA LAB program</strong></h2>
+    <p class="section__description">Each LEL is slightly customized to properly fit into your supply chain and
+      manufacturing process. The
+      LOOMIA
+      Lab program takes you from concept to a pilot production run. We work with our customers to go from lab
+      prototype, to pilot production, to scale production. Our LEL has been designed for easy integration,
+      meaning
+      that <strong>your product maintains your existing supply chain at scale.</strong></p>
+    <div class="business-phases__card-wrap">
+      <div class="business-phases__card">
+        <div class="business-phases__card-img">
+          <img
+            src="assets/images/business/program_1.jpg"
+            alt="icon">
+        </div>
+        <div class="business-phases__card-box">
+          <h4 class="card-title">Phase 1: CONCEPT</h4>
+          <p class="card-text">
+            - Concept Refinement<br>
+            - Market and User Research<br>
+            - Use Case discovery<br>
+            - LEL Sampling<br>
+            - Functionality Specs<br></p>
+        </div>
+      </div>
+      <div class="business-phases__card">
+        <div class="business-phases__card-img">
+          <img
+            src="assets/images/business/program_2.jpg"
+            alt="icon">
+        </div>
+        <div class="business-phases__card-box">
+          <h4 class="card-title">Phase 2: Design & Engineering</h4>
+          <p class="card-text">
+            - Functional prototype that can be used for marketing, POC, or internal buy-in.<br>
+            - User interviews and user testing<br>
+            - Product Design & Engineering Iterations<br>
+            -LEL customization<br></p>
+        </div>
+      </div>
+      <div class="business-phases__card">
+        <div class="business-phases__card-img">
+          <img
+            src="assets/images/business/program_3.jpg"
+            alt="icon">
+        </div>
+        <div class="business-phases__card-box">
+          <h4 class="card-title">Phase 3: DFM Refinement</h4>
+          <p class="card-text">
+            - Functionality Refinement<br>
+            - DFM Iterations<br>
+            - Safety and performance tests with partner organizations<br>
+            - Assembly guide & tech pack development<br>
+            - Production Tests<br></p>
+        </div>
+      </div>
+      <div class="business-phases__card">
+        <div class="business-phases__card-img">
+          <img
+            src="assets/images/business/program_4.jpg"
+            alt="icon">
+        </div>
+        <div class="business-phases__card-box">
+          <h4 class="card-title">Phase 4: Pilot Production</h4>
+          <p class="card-text">
+            - Pilot LEL Production<br>
+            - Pilot assembly ( at your manufacturing facility or our partner assembly houses)<br>
+            - Certifications as needed (FCC,CE, etc.)<br>
+            - Scalability plan<br>
+            - Marketing assistance<br></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="business-partners">
+    <div class="section__line"></div>
+    <h2 class="section__title"><strong>Supply chain and partners</strong></h2>
+    <p class="section__description">Working with <strong>LOOMIA</strong>, you have access to our network of <strong>design,
+      engineering,
+      manufacturing</strong> and <strong>testing</strong> groups. With our extensive network of partner
+      organizations, we can offer you additional services such as PCB customization, FCC testing and garment
+      production.</p>
+    <h2 class="business-partners__textile">Oup e-textile integration partner:</h2>
+    <div class="business-partners__wrap">
+      <img
+        src="assets/images/business/Logo_Eastprint.jpg"
+        alt="Eastprint">
+      <div>
+        <p>LOOMIA works with Eastprint, a 40 year old OEM manufacturer to produce our technology at scale. We work
+          with
+          our e-textile integration partner to handle large orders, meaning you can expect the delivery and
+          production
+          of a large business from a small company. Our production is done in Mexico for large runs, and in the U.S.
+          for
+          small runs.</p>
+        <p>Eastprint is ISO 9001, ISO 13485 and ITAR registered. <a href="#">Learn more about Eastprint’s
+          capabilities.</a></p>
+      </div>
+    </div>
+
+    <div class="business-partners__logo">
+      <img
+        src="assets/images/business/itar-thumb.png"
+        alt="itar-thumb">
+      <img
+        src="assets/images/business/nqa-iso-13485-icon.jpg"
+        alt="nqa-iso-13485">
+      <img
+        src="assets/images/business/nqa-iso-9001-icon.jpg"
+        alt="nqa-iso-9001">
+    </div>
+  </section>
+</div>
+

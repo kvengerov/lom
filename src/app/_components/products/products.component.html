@@ -1,0 +1,85 @@
+<app-background></app-background>
+<div class="container">
+  <section class="lel"
+           data-aos="fade-down"
+           data-aos-easing="linear"
+           data-aos-duration="1500">
+    <h2 class="section__title">The Loomia electronic layer (LEL)</h2>
+    <div class="lel__content-wrap">
+      <div class="lel__image_wrapper">
+        <img class="lel__image info__image"
+             src="assets/images/products/Light.gif"
+             alt="Image">
+        <div class="image-overlay"></div>
+      </div>
+      <p class="lel__text">
+        LOOMIA specializes in producing a patented soft circuit system called the LEL.
+        The LEL is designed to integrate into textile products.
+        These circuits can light, sense and heat.
+        <span>We can customize the size, shape and functionality of our LOOMIA Electronic Layer
+                  technology to properly integrate into your product.</span>
+        All LOOMIA Electronic Layers come pre-connected to a connector of your choosing
+        (USB, JST, magnetic pogo pin, etc). The LEL can also be manufactured to have solder pads
+        to connect to a wired system.
+      </p>
+    </div>
+  </section>
+  <section class="product-line">
+    <div class="section__line"></div>
+    <h2 class="section__title">Our product line</h2>
+    <div class="product-line__card-wrap"
+         data-aos="fade-down"
+         data-aos-easing="linear"
+         data-aos-duration="1500">
+      <div class="product-line__card" *ngFor="let card of productLine">
+        <div class="product-line__img">
+          <img [src]="card.img">
+          <p class="product-line__title">{{card.title}}</p>
+        </div>
+        <div class="product-line__description">
+          <p class="product-line__text">{{card.description}}</p>
+          <p class="product-line__text"><strong>Status: {{card.status}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product-produce"
+           data-aos="fade-down"
+           data-aos-easing="linear"
+           data-aos-duration="1500">
+    <div class="section__line"></div>
+    <h2 class="section__title"><strong>WHAT WE PRODUCE</strong></h2>
+    <p>We manufacture 4 critical components to make the LEL possible. Learn more about the ingredients that make up
+      the LEL below.</p>
+    <div class="product-produce__card-wrap">
+      <div class="product-produce__card" *ngFor="let card of productProduce; index as i">
+        <div class="product-produce__card-img">
+          <img [src]="card.img">
+        </div>
+        <div class="product-produce__card-box">
+          <h4 class="card-title">{{i + 1}}) {{card.title}}</h4>
+          <p class="card-text">{{card.description}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product-performance"
+           data-aos="fade-down"
+           data-aos-easing="linear"
+           data-aos-duration="1500">
+    <div class="section__line"></div>
+    <h2 class="section__title"><strong>PERFORMANCE & CERTIFICATION</strong></h2>
+    <div class="product-performance__card-wrap">
+      <div class="product-performance__card" *ngFor="let item of performances">
+        <div class="product-performance__card-img">
+          <img [src]="item.img"
+               [alt]="item.title">
+        </div>
+        <div class="product-performance__card-box">
+          <h4 class="card-title__performance">{{item.title}}</h4>
+          <p class="card-text__performance">{{item.description}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

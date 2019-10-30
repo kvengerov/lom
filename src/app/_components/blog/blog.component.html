@@ -1,0 +1,21 @@
+<app-background></app-background>
+<div class="container">
+  <section class="blog">
+    <h2 class="section__title">Our product line</h2>
+    <div class="blog__card-wrap">
+      <div class="blog__card" *ngFor="let item of blogs">
+        <div class="blog__img">
+          <img [src]="item.img">
+        </div>
+        <div class="blog__description">
+          <p class="blog__title">{{item.title}}</p>
+          <p class="blog__author">{{item.author}}</p>
+          <p class="blog__date">{{item.date}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+

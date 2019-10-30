@@ -1,0 +1,125 @@
+.header {
+  padding: 20px 0;
+}
+.logo_area {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -5px;
+  outline: none;
+  cursor: pointer;
+  & img {
+    width: 140px;
+  }
+  @media (max-width: 991.98px) {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+.inner_main_menu {
+  @media (max-width: 991.98px) {
+    margin: 0 auto;
+  }
+  & ul {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    @media (max-width: 991.98px) {
+      text-align: center;
+    }
+    & li {
+      float: none;
+      display: inline-block;
+      font-size: 13px;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 20px;
+      color: #091353;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        opacity: .7;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        float: left;
+        @media (max-width: 991.98px) {
+          float: none;
+        }
+      }
+    }
+  }
+}
+
+.mobile_main_menu {
+  display: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .inner_main_menu {
+    display: none;
+  }
+  .mobile_main_menu {
+    display: block;
+    margin-top: 20px;
+    & .offcanvas {
+      width: 250px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -250px;
+      bottom: 0;
+      background: #c4c3c3;
+      z-index: 1000;
+      transform: translateX(0);
+      transition: all 200ms ease-in-out;
+      & ul {
+        list-style: none;
+        margin: 0;
+        display: block;
+        & li {
+          float: none;
+          font-size: 13px;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 10px 20px;
+          color: #091353;
+          cursor: pointer;
+          outline: none;
+          &:hover {
+            opacity: .7;
+          }
+          &:nth-child(1) {
+            margin-top: 20px;
+          }
+        }
+      }
+      & .toogle {
+        background-color: transparent;
+        border: 0;
+        color: #ffffff;
+        margin-left: 260px;
+        margin-top: 35px;
+        position: absolute;
+        &:focus {
+          outline: none;
+        }
+        &:before {
+          content: '\f0c9';
+          font-family: 'FontAwesome', sans-serif;
+          cursor: pointer;
+          font-size: 40px;
+          color: #091353;
+        }
+      }
+    }
+  }
+  .offcanvas-expand .offcanvas {
+    transform: translateX(250px);
+  }
+}

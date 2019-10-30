@@ -1,0 +1,30 @@
+<section id="main_menu">
+  <div class="container">
+    <div class="header">
+      <div class="logo_area" routerLink="/">
+        <img src="/assets/images/loomia.png" alt="Logo">
+      </div>
+      <div class="inner_main_menu">
+        <ul>
+          <li routerLink="/products">Products</li>
+          <li routerLink="/business">Business solutions</li>
+          <li routerLink="/request">Request a sample</li>
+          <li routerLink="/blog">Blog</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="mobile_main_menu" id="toggle" (click)="toggleMenu()">
+      <div class="offcanvas">
+        <button class="toogle"></button>
+        <ul>
+          <li routerLink="/products">Products</li>
+          <li routerLink="/business">Business solutions</li>
+          <li routerLink="/request">Request a sample</li>
+          <li routerLink="/blog">Blog</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
